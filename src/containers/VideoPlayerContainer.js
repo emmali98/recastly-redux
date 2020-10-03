@@ -5,4 +5,6 @@ const mapStateToProps = (state) => ({
   video: state.currentVideo
 });
 
-export default connect(mapStateToProps)(VideoPlayer);
+const VideoPlayerContainer = connect(mapStateToProps, null)(VideoPlayer);
+
+export default VideoPlayerContainer;

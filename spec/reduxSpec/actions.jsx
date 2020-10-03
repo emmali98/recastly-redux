@@ -38,6 +38,7 @@ describe('Action dispatchers', function() {
       expect(changeVideoList.length).to.equal(1);
     });
     it('should return an object', function() {
+      console.log(changeVideoList.firstCall.returnValue);
       expect(changeVideoList.firstCall.returnValue).to.be.an('object');
     });
     it('should return an object with a "type" key equal to "CHANGE_VIDEO_LIST"', function() {

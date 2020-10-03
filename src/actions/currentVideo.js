@@ -1,6 +1,6 @@
 var changeVideo = (video) => ({
-  type: 'CURRENT_VIDEO_CHANGED',
-  currentVideo: video
+  type: 'CHANGE_VIDEO',
+  video: video
 });
 
 export default changeVideo;
